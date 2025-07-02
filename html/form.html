@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+ 
+    form{
+        width: 450px;
+        height: 450px;
+        background-color: azure;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    }
+    h1{
+        text-align: center;
+        color: blue;
+        margin-top: 10px;
+    
+    }
+    h1:hover{
+        color: pink;
+    }
+    .input_text{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+    .input_text input{
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: 1px solid gray;
+        
+
+    }
+    .input_text label{
+        color: rgb(127, 127, 146);
+    }
+    button{
+        padding: 10px 25px;
+        background-color: green;
+        margin-left: 40%;
+        border: none;
+        color: white;
+
+    
+    }
+    button:hover{
+        background-color: pink;
+        color: blue;
+    }
+
+
+
+</style>
+<body>
+    <form action="">
+        <h1>Login </h1>
+        <div class="input_text">
+            <label for="name">UserName</label>
+        <input type="text"  required placeholder="UserName">
+        </div>
+           <div class="input_text">
+            <label for="name">Password</label>
+        <input type="password"  required placeholder="********">
+        </div>
+           <div class="input_text">
+            <label for="password">Comfirm Password</label>
+        <input type="password"  required placeholder="***********">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
